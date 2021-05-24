@@ -18,19 +18,19 @@ function setup() {
     }
     
     for(var j = 40; j <=width; j = j + 50){
-    plinkos.push(new Plinko(j,75,15));
+    plinkos.push(new Plinko(j,75,10));
     }
     
     for(var j = 15; j <=width - 20; j = j + 50){
-      plinkos.push(new Plinko(j,175,15));
+      plinkos.push(new Plinko(j,175,10));
       }
     
       for(var j = 10; j <=width - 20; j = j + 50){
-        plinkos.push(new Plinko(j,275,15));
+        plinkos.push(new Plinko(j,275,10));
         }
     
         for(var j = 5; j <=width - 10; j = j + 50){
-          plinkos.push(new Plinko(j,375,15));
+          plinkos.push(new Plinko(j,375,10));
           }
 }
 
