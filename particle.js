@@ -1,6 +1,6 @@
 class Particle{
 
- costructor(x,y,r){
+ constructor(x,y,r){
 
   var options = {
       restitution:0.4
@@ -12,7 +12,9 @@ class Particle{
 World.add(world, this.body);
 }   
 display(){
+    if(this.body != undefined){
 
+    
     var pos = this.body.position;
     var angle = this.body.angle;
 
@@ -22,7 +24,9 @@ display(){
     //imageMode(CENTER);
     noStroke();
     fill(this.color);
+    ellipseMode(RADIUS);
     ellipse(0,0,this.r,this.r);
     pop();
+};   
 } 
 };

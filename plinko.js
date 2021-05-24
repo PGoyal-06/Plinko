@@ -1,17 +1,18 @@
 class Plinko{
-constructor(x,y,w,h) {
+constructor(x,y,r) {
 var options = {
 isStatic: true   
 }
 
-this.body = Bodies.circle(x,y,this.r,options)
-this.color = color(random(0,255),random(0,255),random(0,255));
+this.body = Bodies.circle(x,y,r,options)
+this.radius = r
 World.add(world,this.body);
 }
 
 display(){
 
 var pos = this.body.position;
-ellipse(0,0,this.r,this.r);
+
+ellipse(pos.x,pos.y,this.radius,this.radius);
 };
 }
